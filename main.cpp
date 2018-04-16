@@ -17,11 +17,11 @@ int main(int argc, char *argv[])
 
     if(arguments.count() < 2)   //这个参数至少也是1，程序会自动传入一个参数，内容是程序所在目录地址
     {
-        absDir = absDir + "/1.mp3";      //没有传入参数，使用默认参数
+        absDir = absDir + "/music/1.mp3";      //没有传入参数，使用默认参数
     }
     else
     {
-        absDir = absDir + "/" + arguments.at(1);    //使用传入音乐名称作为参数
+        absDir = absDir + "/music/" + arguments.at(1);    //使用传入音乐名称作为参数
     }
 
     qDebug() << "Path:" << absDir << endl;      //显示文件目录
